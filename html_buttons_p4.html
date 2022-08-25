@@ -1,0 +1,339 @@
+<!-- box-shadow: [h-offset] [v-offset] [blur-radius] [spread-radius] [color]; -->
+<!-- so box-shadow: 0px 4px 10px -4px black will make blur only at bottom of box -->
+
+<style>
+    button{
+        background-color: red;
+        color: blue;
+        border: none;
+
+        cursor: pointer;
+    }
+
+    .uber-button{
+        background-color: black;
+        color: white;
+
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: opacity 0.15s;
+    }
+
+    .uber-button:hover{
+        opacity: 0.7;
+    }
+    
+    .uber-button:active{
+        opacity: 0.5;
+    }
+
+    .amazon-button{
+        background-color: rgb(255,216,20);
+        color: black;
+        font-size: 10px;
+        font-weight: bold;
+
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+
+        border-radius: 14px;
+        transition: background-color 0.15s;
+    }
+
+    .amazon-button:hover{
+        background-color: rgb(245,195,11);
+    }
+ 
+    .github-button{
+        background-color: rgb(46, 164, 79);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+
+        border-radius: 5px;
+        transition: background-color 0.15s;
+
+    }
+
+    .github-button:hover{
+        box-shadow: 0px 4px 8px -4px rgba(0,0,0,0.15);
+    }
+
+    .bootstrap-get-started-button{
+        background-color: rgb(121, 82, 179);
+        color: rgb(255,255,255);
+        font-weight: bold;
+        font-size: 12px;
+
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+
+        border-radius: 4px;
+        transition: background-color 0.15s;
+    }
+
+    .bootstrap-get-started-button:hover{
+        background-color: rgb(77,50,112);
+    }
+    .bootstrap-download-button{
+        background-color: rgb(255,255,255);
+        color: rgb(108, 117, 125);
+        font-weight: bold;
+        font-size: 12px;
+
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        
+        border: 1px solid rgb(108, 117, 125);
+        border-radius: 4px;
+
+        margin-left: 4px;
+        transition: background-color 0.15s, color .15s;
+    }
+
+    .bootstrap-download-button:hover{
+        background-color: rgb(108, 117, 125);
+        color: rgb(255, 255, 255);
+    }
+
+    .linkedin-apply-button{
+        background-color: rgb(10, 102, 194);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 10px;
+
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+
+        border-radius: 12px;
+        transition: background-color 0.15s;
+    }
+
+    .linkedin-apply-button:hover{
+        background-color: rgb(0,51,107);
+    }
+    .linkedin-save-button{
+        background-color: white;
+        color: rgb(10, 102, 194);
+        font-weight: bold;
+        font-size: 10px;
+
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+
+
+        border: 0.5px solid rgb(10, 102, 194);
+        border-radius: 12px;
+        
+        margin-left: 4px;
+        transition: background-color 0.15s, opacity 0.15s, border-width 0.1s;
+    }
+
+    .linkedin-save-button:hover{
+        border-width: 1px;
+        background-color: rgba(10, 102, 194, 0.1);
+    }
+
+    .bolded{
+        font-weight: bold;
+        font-size: 24px;
+
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .green-bolded{
+        font-weight: bold;
+        color: rgb(0, 136, 0);
+    }
+
+    .amazon-link{
+        color: rgb(0, 113, 133);
+    }
+
+    .selector-button {
+        background-color: rgb(239,239,239);
+        color: rgb(0,0,0);
+        font-size: 12px;
+        
+        border: 0.5px solid rgb(137,137,137);
+        border-radius: 1px;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+        margin-left: 2px;
+        margin-right: 2px;
+
+    }
+
+    .page-button{
+        background-color: rgb(255,255,255);
+        color: rgb(77,35,122);
+        font-size: 12px;
+
+        text-decoration: underline;
+        padding-left: 4px;
+        padding-right: 4px;
+
+    }
+    .green-button-scheme{
+        background-color: rgb(0,117,6);
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+
+        vertical-align: top;
+        
+    }
+    .green-button-scheme:hover{
+        cursor: pointer;
+    }
+    .stretch-button{
+        transition: padding-left 0.5s, 
+            padding-right 0.5s, 
+            padding-top 0.5s, 
+            padding-bottom 0.5s;
+    }
+
+    .stretch-button:hover{
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 6px;
+        padding-bottom: 6px;  
+    }
+    
+    .shadow-button{
+        box-shadow: 2px 2px 1px rgba(0,0,0,0.15);
+    }
+    
+    .shadow-button:active{
+        margin-left: 2px;
+        margin-top: 2px;
+        box-shadow: none;
+    }
+
+    .margin-padding-button{
+        margin-left: 4px;
+        margin-right: 4px;
+
+        transition: padding-left 0.15s, padding-right 0.15s, margin-left 0.15s, margin-right 0.15s;
+    }
+
+    .margin-padding-button:hover{
+        margin-left: 0px;
+        margin-right: 0px;
+
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+</style>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Use CSS to add hovers, transitions, shadows to buttons from the previous exercise:
+        <ul>
+            <li>Uber "Request Now" (opacity)</li>
+            <li>Amazon "Add to Cart (background color)</li>
+            <li>Github "Sign Up" (shadow) </li>
+            <li>Bootstrap "Get Started" and "Download" (background color, text color)</li>
+            <li>LinkedIn "Apply on company website" and "Save" (background color, border width)</li>
+        </ul>
+    </p>
+
+    <p>
+        Uber:
+        <button class="uber-button">
+            Request now
+        </button>
+    </p>
+
+    <p>
+        Amazon:
+        <button class="amazon-button">
+            Add to Cart
+        </button>
+    </p>
+
+    <p>
+        Github
+        <button class="github-button">
+            Sign up
+        </button>
+    </p>
+
+    <p>
+        Bootstrap
+        <button class="bootstrap-get-started-button">
+            Get started
+        </button>
+        <button class="bootstrap-download-button">
+            Download
+        </button>
+    </p>
+    <p>
+        LinkedIn
+        <button class="linkedin-apply-button">
+            Apply on company website
+        </button>
+        <button class="linkedin-save-button">
+            Save
+        </button>
+    </p>
+
+    <p>Challenge: recreate designs 4h-4k</p>
+    <p>4h. Pagination</p>
+    <p>
+        <button class="selector-button">Back</button>
+        <button class="page-button">1</button>
+        <button class="page-button">2</button>
+        <button class="page-button">3</button>
+        <button class="page-button">4</button>
+        <button class="page-button">5</button>
+        <button class="selector-button">Next</button>
+    </p>
+    <p>4i. Stretch</p>
+    <p>
+        <button class="green-button-scheme stretch-button">Strech</button>
+    </p>
+    <p>4j. 3D Click</p>
+    <p>
+        <button class="green-button-scheme shadow-button">Shadow</button>
+    </p>
+    <p>4k. Margin and padding together</p>
+    <p>
+        <button class="green-button-scheme margin-padding-button">One</button>
+        <button class="green-button-scheme margin-padding-button">Two</button>
+        <button class="green-button-scheme margin-padding-button">Three</button>
+    </p>
+</body>
+</html>
