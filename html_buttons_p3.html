@@ -1,0 +1,225 @@
+<!-- box-shadow: [h-offset] [v-offset] [blur-radius] [spread-radius] [color]; -->
+<!-- so box-shadow: 0px 4px 10px -4px black will make blur only at bottom of box -->
+
+<style>
+    button{
+        background-color: red;
+        color: blue;
+        border: none;
+
+        cursor: pointer;
+    }
+
+    .uber-button{
+        background-color: black;
+        color: white;
+
+        height: 32px;
+        width: 108px;
+        transition: opacity 0.15s;
+    }
+
+    .uber-button:hover{
+        opacity: 0.7;
+    }
+    
+    .uber-button:active{
+        opacity: 0.5;
+    }
+
+    .amazon-button{
+        background-color: rgb(255,216,20);
+        color: black;
+        font-size: 10px;
+        font-weight: bold;
+
+        width: 100px;
+        height: 28px;
+
+        border-radius: 14px;
+        transition: background-color 0.15s;
+    }
+
+    .amazon-button:hover{
+        background-color: rgb(245,195,11);
+    }
+    .amazon-buy-button{
+        background-color: rgb(255,164,28);
+        color: black;
+
+        width: 100px;
+        height: 28px;
+
+        border-radius: 14px;
+        margin-left: 8px;
+    }
+
+    .github-button{
+        background-color: rgb(46, 164, 79);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+
+        width: 74px;
+        height: 28px;
+
+        border-radius: 5px;
+        transition: background-color 0.15s;
+
+    }
+
+    .github-button:hover{
+        box-shadow: 0px 4px 8px -4px rgba(0,0,0,0.15);
+    }
+
+    .bootstrap-get-started-button{
+        background-color: rgb(121, 82, 179);
+        color: rgb(255,255,255);
+        font-weight: bold;
+        font-size: 12px;
+
+        height: 32px;
+        width: 95px;
+
+        border-radius: 4px;
+        transition: background-color 0.15s;
+    }
+
+    .bootstrap-get-started-button:hover{
+        background-color: rgb(77,50,112);
+    }
+    .bootstrap-download-button{
+        background-color: rgb(255,255,255);
+        color: rgb(108, 117, 125);
+        font-weight: bold;
+        font-size: 12px;
+
+        height: 32px;
+        width: 95px;
+        
+        border: 1px solid rgb(108, 117, 125);
+        border-radius: 4px;
+
+        margin-left: 4px;
+        transition: background-color 0.15s, color .15s;
+    }
+
+    .bootstrap-download-button:hover{
+        background-color: rgb(108, 117, 125);
+        color: rgb(255, 255, 255);
+    }
+
+    .linkedin-apply-button{
+        background-color: rgb(10, 102, 194);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 10px;
+
+        height: 24px;
+        width: 160px;
+
+        border-radius: 12px;
+        transition: background-color 0.15s;
+    }
+
+    .linkedin-apply-button:hover{
+        background-color: rgb(0,51,107);
+    }
+    .linkedin-save-button{
+        background-color: white;
+        color: rgb(10, 102, 194);
+        font-weight: bold;
+        font-size: 10px;
+
+        height: 24px;
+        width: 48px;
+
+        border: 0.5px solid rgb(10, 102, 194);
+        border-radius: 12px;
+        
+        margin-left: 4px;
+        transition: background-color 0.15s, opacity 0.15s, border-width 0.1s;
+    }
+
+    .linkedin-save-button:hover{
+        border-width: 1px;
+        background-color: rgba(10, 102, 194, 0.1);
+    }
+
+    .bolded{
+        font-weight: bold;
+        font-size: 24px;
+
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .green-bolded{
+        font-weight: bold;
+        color: rgb(0, 136, 0);
+    }
+
+    .amazon-link{
+        color: rgb(0, 113, 133);
+    }
+</style>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Use CSS to add hovers, transitions, shadows to buttons from the previous exercise:
+        <ul>
+            <li>Uber "Request Now" (opacity)</li>
+            <li>Amazon "Add to Cart (background color)</li>
+            <li>Github "Sign Up" (shadow) </li>
+            <li>Bootstrap "Get Started" and "Download" (background color, text color)</li>
+            <li>LinkedIn "Apply on company website" and "Save" (background color, border width)</li>
+        </ul>
+        <p>Challenge Continue exercise from html_buttons using CSS</p>
+    </p>
+
+    <p>
+        Uber:
+        <button class="uber-button">
+            Request now
+        </button>
+    </p>
+
+    <p>
+        Amazon:
+        <button class="amazon-button">
+            Add to Cart
+        </button>
+    </p>
+
+    <p>
+        Github
+        <button class="github-button">
+            Sign up
+        </button>
+    </p>
+
+    <p>
+        Bootstrap
+        <button class="bootstrap-get-started-button">
+            Get started
+        </button>
+        <button class="bootstrap-download-button">
+            Download
+        </button>
+    </p>
+    <p>
+        LinkedIn
+        <button class="linkedin-apply-button">
+            Apply on company website
+        </button>
+        <button class="linkedin-save-button">
+            Save
+        </button>
+    </p>
+</body>
+</html>
