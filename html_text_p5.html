@@ -17,6 +17,9 @@
         font-family: Arial;
         font-weight: bold;
     }
+    .font-arial-normal{
+        font-family: Arial;
+    }
     .red-styled{
         color: rgb(200,63,56);
         font-weight: 500;
@@ -54,7 +57,7 @@
         padding-left: 8px;
         padding-right: 8px;
     }
-    .apple-title{
+    .centered{
         text-align: center;
     }
     .apple-desc{
@@ -70,6 +73,69 @@
         font-size: 9px;
 
         text-align: center;
+    }
+    .buy-button{
+        background-color: rgb(48,111,212);
+        color: rgb(255,255,255);
+        font-size: 5px;
+        font-weight: 550;
+
+        border: none;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 8px;
+    }
+    .accent{
+        color: rgb(218,147,107);
+        font-size: 6px;
+        margin-bottom: 4px;
+    }
+    .item-name{
+        font-size: 8px;
+    }
+    .item-slogan{
+        font-size: 14px;
+
+        margin-top: 0px;
+        margin-bottom: 4px;
+    }
+    .item-pricing{
+        font-size: 6px;
+        font-weight: 550;
+        color: rgb(88,88,88);
+        
+        margin-bottom: 4px;
+    }
+    .small-grey{
+        font-size: 9px;
+        color: rgb(112,112,112);
+    }
+    .daily-delta{
+        color: rgb(98,143,107);
+        font-size: 9px;
+
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    .red-accent{
+        color: rgb(207, 0, 0);
+    }
+    .username{
+        font-size: 9px;
+        font-weight: bold;
+    }
+    .description{
+        font-size: 9px;
+        
+        margin-top: 3px;
+        margin-bottom: 12px;
+
+        width: 300;
+    }
+    .user-link{
+        color: rgb(80,115,148);
     }
 </style>
 
@@ -92,8 +158,35 @@
     <button class="font-verdana get-started-button">Get Started</button>
 
     <p class="font-title">5d. font = Arial</p>
-    <p class="font-arial apple-title">Shopping for your business?</p>
+    <p class="font-arial centered">Shopping for your business?</p>
     <p class="font-arial apple-desc">See how Apple at Work can help.</p>
     <p class="font-arial learn-more">Learn more &#62;</p>
 
+    <p class="font-title">5e.</p>
+
+    <div class="centered font-arial">
+        <p class="accent">New</p>
+        <p class="item-name">MacBook Pro</p>
+        <p class="item-slogan">Supercharged for pros.</p>
+        <p class="item-pricing">From &#36;1999</p>
+        <button class="buy-button">Buy</button>
+    </div>
+
+    <p class="font-title">5f.</p>
+    <div class="font-arial-normal">
+        <p>1,049.61 <span class="small-grey">USD</span></p>
+        <p class="daily-delta">+18.05 (1.75&#37;) today</p>
+        <p class="small-grey">After hours 1,048.00 <span class="red-accent">-1.61 (0.15&#37;)</span></p>
+    </div>
+
+    <p class="font-title">5g.</p>
+    <div class="font-arial-normal">
+        <p class="username">freeCodeCamp.org <span class="small-grey">&#64;freeCodeCamp 1h</span></p>
+        <p class="description">
+            As a web developer, you'll want to make your projects easy to use and navigate around.
+        </p>
+        <p class="description">
+            Here <span class="user-link">&#64;chp_it</span> outlines the top skills new developers should have.
+        </p>
+    </div>
 </body>
