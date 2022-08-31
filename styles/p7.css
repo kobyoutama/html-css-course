@@ -1,0 +1,95 @@
+p{
+    font-family: Arial;
+    font-size: 8px;
+    color: blue;
+}
+
+.rounded{
+    width: 200px;
+    border-width: 200px;
+    border-radius: 12px;
+}
+.square-centered{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
+}
+
+.rounded-search{
+    font-size: 12px;
+    border-width: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 4px;
+}
+
+.rounded-shadow-search{
+    width: 400px;
+    border: none;
+    border-radius: 12px;
+    padding-left: 12px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    box-shadow: 0px 0px 8px rgba(0,0,0, .25);
+}
+
+.linkedin-text{
+    color: grey;
+}
+
+.linkedin-input{
+    width: 200px;
+}
+.linkedin-button{
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+    background-color: rgb(36,83,152);
+
+    border: none;
+    border-radius: 25px;
+
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.twitter-img{
+    width: 23px;
+    height: 23px;
+    vertical-align: middle;
+}
+.twitter-input{
+    color: grey;
+    font-size: 8px;
+    border: none;
+    padding-right: 30px;
+    vertical-align: middle;
+
+}
+
+.twitter-button{
+    background-color: rgb(29,155,240);
+    color: white;
+    font-size: 8px;
+    font-weight: bold;
+
+    border: none;
+    
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    border-radius: 12px;
+}
